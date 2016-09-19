@@ -1,0 +1,103 @@
+\subsection{撰写毕业论文对\TeX 的需求}[Dissertation Typesetting with \TeX]\label{sec:texBene}
+\ppt{\TeX 排版毕业论文：使用模板的益处}
+在\ref{sec:whatistex}节中我们提到，\cquthesis 这一类定制的论文模板可以在很可观的程度上减轻\TeX 用户的排版负担——格式已经预置，标准已经订好，留给用户的事情便是组织内容以及将内容以符合\TeX 及\cquthesis 规范的方式编写出来，排版的任务则留给模板和\TeX 。
+
+进一步地，对于各种用户需求，使用\TeX 对毕业论文进行排版还有以下好处：
+\begin{itemize}
+	\item 计算机系：代码着色和源程序引用，解决论文中插入的程序的版本之忧；
+	\item 外语学院：多国语言文字支持，排版断句以自然段为单位\footnote{Word排版和断句以行为单位。}，间距均衡，可读性高；
+	\item 理工科：高效、美观、原生支持的数学公式、化学公式排版；
+	\item 理工科：基于\texttt{.eps}和\texttt{.pdf}格式的矢量文件支持，矢量插图无限放大不失真；
+	\item 更多美妙之处待你去体会和发掘。
+\end{itemize}
+
+总之，所有的用户都能花更少的时间排出更优秀的版面，而指导老师和学院也不用再烦心学生论文的格式问题，这便是使用\TeX 和论文模板排版毕业论文的突出优点。
+
+\ppt{\TeX 排版毕业论文：国外高校情况}
+在对具代表性五所世界名校（Oxford\cite{o1,o2}, Cambridge\cite{c1,c2}, Harvord\cite{h1,h2}, MIT\cite{m1}, Stanford\cite{s1,s2}）的考察中，我们均在其官网上找到校方发布的毕业论文写作的\TeX 模版及\TeX 课程资源\footnote{可点击参考文献编号察看详情。}。值得注意的是，我们在由哈佛大学本科教务主任编写的《荣誉学士学位论文指南》\cite{h1}中找到了这样的内容“\LaTeX{} is recommended but not required.”（“我们推荐学生使用\LaTeX 撰写，不过，这并不是一个强制要求。”）
+
+在以上所有学校中，校方都同时考虑了使用\TeX 及Word的同学的需求。
+
+\ppt{\TeX 排版毕业论文：国内高校情况}
+事实上，国内引进\TeX 已有数十年的历史，很多大学的大学生或研究生曾自发制作过自己学校的\TeX 模板。为了初步摸清国内大学\TeX 模板的开发和维护情况，笔者通过搜索引擎调研了国内主要大学（985高校及部分省份省会大学）的\TeX 模板开发情况、维护人员、项目地址、项目热度等信息。
+截止2016年6月，国内主要大学（985高校及各省省会大学）的\TeX 模板情况如下\autoref{tab:domestic-statistics}所示：
+
+\begin{longtable}[c]{cccccl}
+	\caption{国内主要大学\TeX 模板维护情况统计}\label{tab:domestic-statistics}\\
+	\toprule
+	\ccell{学校}& \ccell{模板名称}& \ccell{维护人员}& \ccell{项目地址}& \ccell{热度} & \ccell{备注} \\
+	\midrule\endfirsthead
+	\multicolumn{6}{c}{续表~\thetable\hskip1em 国内主要大学\TeX 模板维护情况统计}\\
+	\toprule
+	\ccell{学校}& \ccell{模板名称}& \ccell{维护人员}& \ccell{项目地址}& \ccell{热度} & \ccell{备注}\\
+	\midrule
+	\endhead
+	\hline
+	\multicolumn{6}{r}{续下页}
+	\endfoot
+	\endlastfoot
+	中国科学院研究生院 & CASthesis & 吴凌云 & \href{http://www.ctex.org/PackageCASthesis}{CTeX页面}\footnote{点击可访问，下同。} & 5 & {\zihao{-5}历史悠久，始祖模板之一} \\
+	清华大学 & thuthesis & Ruini Xue & \href{https://ctan.org/pkg/thuthesis}{CTAN页面} & 5 & {\zihao{-5}维护良好，始祖模板之一，用户基数大} \\
+	上海交通大学 & SJTUThesis & weijianwen & \href{https://github.com/weijianwen/SJTUThesis}{Github页面} & 5 & {\zihao{-5}维护良好，用户基数大} \\
+	南开大学 & NKT & 孙文昌 & \href{http://202.113.29.3/~sunwch/tex/tex.htm}{学校网站} & 4 & {\zihao{-5}数学系教授维护} \\
+	电子科技大学 & uestcthesis & Shi Fu­jun& \href{https://www.ctan.org/pkg/uestcthesis}{CTAN页面} & 4 & {\zihao{-5}关注度很不错，研究生院认证，维护略欠缺\footnote{\href{https://www.ctan.org/pkg/uestcthesis}{CTAN版本}最后维护于2013年5月底，好在\href{https://github.com/shifujun/UESTCthesis}{Github版本}维护活跃。学校有\TeX 社区。}} \\
+	北京航空航天大学 & BUAAthesis & BHOSC & \href{https://github.com/BHOSC/BUAAthesis}{Github页面} & 4 & {\zihao{-5}} \\
+	南京大学 & nju-thesis & Haixing-Hu & \href{https://github.com/Haixing-Hu/nju-thesis}{Github页面} & 4 & {\zihao{-5}历史悠久，最早追溯到6年前，分支众多\footnote{4个分支，现在最热的分支维护得不错，没上CTAN有点可惜。}} \\
+	中国科学技术大学 & USTCThesis & ustctug & \href{https://github.com/ustctug/ustcthesis}{Github页面} & 4 & {\zihao{-5}模板代码和运营都很棒\footnote{ustctug是一个很有实力的社团。}} \\
+	北京大学 & pkuthss & Casper Ti. Vector & \href{http://ctan.org/pkg/pkuthss}{CTAN页面} & 3 & {\zihao{-5}} \\
+	北京师范大学 & BnuThesis & henrysting@gmail.com & \href{http://gerry.lamost.org/blog/?p=811}{个人博客} & 3 & {\zihao{-5}清华系} \\
+	山东大学 & sduthesis & Liam Huang & \href{http://www.ctan.org/pkg/sduthesis}{CTAN页面} & 3 & {\zihao{-5}清华系，起步相对早，本硕博支持不全} \\
+	湖南大学 & HNUThesis & 杜家宜 & \href{http://www.hnubbs.com/forum.php?mod=viewthread&tid=790603}{学校论坛} & 3 & {\zihao{-5}清华系，不支持本科} \\
+	华中科技大学 & hustthesis & hust-latex & \href{https://github.com/hust-latex/hustthesis}{Github页面} & 3 & {\zihao{-5}学校建有CTAN镜像，模板有些瑕疵\footnote{正在谋划提交CTAN.}} \\
+	哈尔滨工业大学 & PlutoThesis & dustincys & \href{https://github.com/PlutoThesis}{Github页面} & 3 & {\zihao{-5}历史悠久，分硕博版本和本科版本} \\
+	国立台湾大学 & ntu-thesis & tzhuan & \href{https://github.com/tzhuan/ntu-thesis}{Github页面} & 3 & {\zihao{-5}维护良好，用xeCJK解决方案} \\
+	武汉大学 & WHUBachelor & 黄正华 & \href{http://aff.whu.edu.cn/huangzh/}{学校网站} & 2 & {\zihao{-5}作者为武大老师，LaTeX经验丰富\footnote{课件使用Beamer来做，模板完成度不高，仅支持本科生。}} \\
+	中国海洋大学 & ZwPhdThesis & 周炜 & \href{http://blog.sciencenet.cn/blog-453771-456252.html}{个人博客} & 2 & {\zihao{-5}完成度较低，仅支持博士论文} \\
+	西北工业大学 & nwputhesis & Wang Tianshu & \href{http://code.google.com/p/nwputhesis/}{Google Code} & 2 & {\zihao{-5}维护停滞，但是有热度} \\
+	东南大学 & SEUThesis & 许元 & \href{http://www.ctan.org/pkg/seuthesis}{CTAN页面} & 2 & {\zihao{-5}本身质量不错，但是没有宣传好和维护好} \\
+	华南理工大学 & scutthesis & Alwin Tsui & \href{https://github.com/alwintsui/scutthesis}{Github页面} & 2 & {\zihao{-5}面向Lyx写的一个模板，这点很有意思} \\
+	四川大学 & scu\_thesis\_template & cuiao & \href{https://github.com/dahakawang/scu_thesis_template}{Github页面} & 2 & {\zihao{-5}质量一般\footnote{另外有一个，点击访问\href{https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate}{Github页面}}} \\
+	中国国防科学技术大学 & nudtpaper & Liu Benyuan & \href{https://github.com/liubenyuan/nudtpaper}{Github页面} & 2 & {\zihao{-5}代码历史悠久，现在的版本是传承下来的} \\
+	复旦大学 & FDU-Thesis-Latex & Pandoxie & \href{https://github.com/Pandoxie/FDU-Thesis-Latex}{Github页面} & 2 & {\zihao{-5}上次维护为2年前，硕博双版本} \\
+	天津大学 & TJUThesis  & 张井、余蓝涛 & \href{https://github.com/xnth97/TJUThesisLatexTemplate}{Github页面} & 2 & {\zihao{-5}教务处发文介绍推荐} \\
+	浙江大学 & write\_with\_LaTeX & Monster, Hamburger & \href{https://github.com/ZJU-Awesome/write_with_LaTeX}{Github页面} & 2 & {\zihao{-5}起步很早，版本很多，代码相对老一些\fancyfoot{，部分分支为清华系。}} \\
+	同济大学 & TongjiThesis & gareth@tongji.net & \href{https://sourceforge.net/projects/tongjithesis/}{Sourceforge} & 2 & {\zihao{-5}清华系，最后维护：2009年} \\
+	西安交通大学 & XJTUthesis & multiple1902 & \href{https://code.google.com/archive/p/xjtuthesis/}{Google Code} & 1 & {\zihao{-5}起步早，有三个平行项目\footnote{由于学校的支持欠缺，基本上都停止了。这是\href{https://code.google.com/archive/p/xjtuthesis/wikis/Letters.wiki}{一个明显的项目因为缺乏学校支持而失去活力的例子}。}} \\
+	中山大学 & sysu\_thesis & 陈颂光 & \href{https://github.com/chungkwong/sysu_thesis}{Github页面} & 1 & {\zihao{-5}代码完成度不错，仅支持本科} \\
+	兰州大学 & LZUthesis & mosesnow & \href{https://github.com/mosesnow/LZUthesis}{Github页面} & 1 & {\zihao{-5}中科院系，另外支持Lyx} \\
+	东北大学 & NEU\_PHD\_Template & 艾均 & \href{https://github.com/NobodyLiveForever/NEU_PHD_Template}{Github页面} & 1 & {\zihao{-5}上次维护为3年前，仅支持博士} \\
+	大连理工大学 & DLUT & whufanwei, yuri\_1985 & \href{https://github.com/whufanwei/}{Github页面} & 1 & {\zihao{-5}上次维护为4年前，分硕博双版本} \\
+	厦门大学 & xmu-template & 王玮玮 & \href{https://github.com/wwwxmu/-Latex-}{Github页面} & 1 & {\zihao{-5}模板的代码很简陋\footnote{只涉及了封面和摘要，章节、目录等都没有涉及。厦门大学开有\LaTeX 选修课程。}} \\
+	中国人民大学 & ructhesis & ZebinWang & \href{https://github.com/ZebinWang/ructhesis}{Github页面} & 1 & {\zihao{-5}} \\
+	华东师范大学 & ecnuthesis & 邓沛 & \href{https://sourceforge.net/projects/ecnuthesis/}{Sourceforge} & 1 & {\zihao{-5}代码思路不错，最后维护：2012年} \\
+	重庆大学 & CQUThesis & 李振楠 & \href{https://www.ctan.org/pkg/cquthesis}{CTAN页面} & 1 & {\zihao{-5}刚刚开启，还需要生态建设\footnote{其实，在2014年左右，我校学子陈关才开发过名为CQU的毕业论文模板，托管于\href{https://code.google.com/archive/p/cqu/}{Google Code}，不过这个项目已经很久没有维护了。}} \\
+	吉林大学 & jluthesis & Zhang Yinhe & \href{https://code.google.com/archive/p/jluthesis/}{Google Code} & 0 & {\zihao{-5}最后维护：2009年} \\
+	云南大学 & ynuthesislyx & cherrot & \href{https://github.com/cherrot/ynuthesislyx}{Github页面} & 0 & {\zihao{-5}清华系，基于Lyx，仅本科\footnote{最后维护于3年前。}} \\
+	北京理工大学 &  &  &  & 0 & {\zihao{-5}建有CTAN镜像} \\
+	中国农业大学 &  &  &  & 0 & {\zihao{-5}有人尝试过} \\
+	中央民族大学 &  &  &  & 0 & {\zihao{-5}} \\
+	中南大学 &  &  &  & 0 & {\zihao{-5}有人尝试过，但是不成系统} \\
+	西北农林科技大学 &  &  &  & 0 & {\zihao{-5}} \\
+	广西大学 &  &  &  & 0 & {\zihao{-5}} \\
+	香港大学 &  &  &  & 0 & {\zihao{-5}} \\
+	澳门大学 &  &  &  & 0 & {\zihao{-5}} \\
+	西藏大学 &  &  &  & 0 & {\zihao{-5}} \\
+	\bottomrule
+\end{longtable}
+
+在解读数据时，以下几点也许需要注意：
+\begin{itemize}
+	\item “热度”一项由笔者综合评判而得，0为无热度，即认为几乎不会有人使用、讨论、修订、维护相关模板，1$ \sim $5为有热度，数值越大，热度越高，其中规定以清华大学模板\textsc{THUThesis}的热度为5。热度的判定基于以下因素：模板最近维护时间和历史维护频率、关于模板的相关讨论（例如Github Issues）、模板代码质量、模板功能完全程度、模板是否被其他模板所模仿和引用\footnote{清华大学的模板\textsc{THUThesis}、上海交通大学的模板以及哈尔滨工业大学的模板便是有力的例子，很多学校的模板都是在它们的基础上再开发而来。这当中也体现了开源软件的优越性质。}、模板是否模仿和引用其他模板\footnote{例如\cquthesis 即为清华系模板。}、学校支持程度、\TeX 社群维护质量、学校是否维护有CTAN镜像等；
+	\item 从模板的托管位置也能看出一些特点，例如：1. 至今仍然托管于Google Code的模板一般都是开发得很早（先驱者），但已经停止维护很久的模板\footnote{Google Code于2015年8月底进入只读模式，如果项目仍然有维护，一般会被迁移到Github。}；2. 很多的模板托管于Github，看得出大部分开发者都有此共识：论文模板这一类产品需要和用户保持交流（需求变化、学校规定更新等）；3. 托管于CTAN的模板一般都有着不错的质量\footnote{模板上传到CTAN就意味着模板有使用手册，而有使用手册的模板的维护力量一般都不会太差。}；4. 有的模板托管于学校相关网站，这一般都会给模板带来不错的关注度。
+\end{itemize}
+
+
+\ppt{\TeX 排版毕业论文：学校支持和认可的必要性}
+从以上数据中，我们可以得出一些初步结论：
+\begin{enumerate}
+	\item \TeX 作为舶来品，其传播和使用与学校当中的科研人员的使用需求相关度高，科研能力强，投稿需求大的学校（在\ref{sec:jounaldemands}节中我们讨论过期刊投稿中使用\TeX 作为文章接受格式的比例和成因），对\TeX 的认知更加全面，从而在学生当中更可能会有愿意和能够进行模板开发的先行者；
+	\item 很多历史悠久的模板都没能撑下来，这和学校\TeX 用户稀少，社群凝聚力差，模板维护者放弃维护息息相关；
+	\item 几乎没有学校会以官方的身份去开发模板，但是学校可以对模板进行测试、认证以及推荐；
+	\item 学校的支持和认可是十分必要的，学校的支持会带来源源不断的\TeX 用户，这使得每年毕业季模板都会有人使用，从而获得持续的反馈；学校的认可则会稳定\TeX 用户们的心，让他们确信，在花功夫习得\TeX 的使用方法后，他们会有用武之地\footnote{西安交通大学的模板开发是\href{https://code.google.com/archive/p/xjtuthesis/wikis/Letters.wiki}{一个明显的项目因为缺乏学校支持而失去活力的遗憾}。}。同时，这也是对模板作者的鼓励和推动。
+\end{enumerate}
+

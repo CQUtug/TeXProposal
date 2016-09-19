@@ -1,0 +1,301 @@
+% 一些文章常量
+\def\tstitle{关于推荐学校开设\TeX 相关课程\\并推广其运用的提议}
+\def\etstitle{Proposal for Offering \TeX Courses and Relevant Resources in Chongqing University}
+\def\tsabstract{本提案从介绍排版系统\TeX 的背景和特点开始，从研究生期刊论文投稿以及毕业生毕业论文排版工作这两个维度阐述了引入\TeX 作为一种与Office Word平行的写作系统的优势和必要性，最终提出一套基于我校实际情况、有效可行的实施方案。}
+\def\etsabstract{The present proposal mainly explains the importance and necessity of introducing \TeX, a typeset system often used in academic writing, to students and teachers as the counterpart of Microsoft Word. This proposal starts from a brief introduction of \TeX, then steps further into its fascinating application on academic writing and dissertation formatting. In the end, a set of possible implementation strategies with regard to the proper introduction of \TeX and relevant resources to our university, is proposed.}
+\def\tsauthor{Zhennan Li, Chenyu Wu, Chunlei Liu, Pinyong Zhao}
+\def\tskeywords{TeX, LaTeX, Chongqing University, Application, Proposal, CTAN}
+\date{}
+
+
+% 宏包
+% 引入新宏包时注意：不要冲突，不要重复
+\RequirePackage{fontspec}
+\RequirePackage{amsmath}
+\RequirePackage{multicol}
+\RequirePackage{newpxtext}
+\RequirePackage{newpxmath}
+\RequirePackage{listings}
+\RequirePackage{fancyhdr}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{etoolbox}
+\RequirePackage{metalogo}
+\RequirePackage{graphicx}
+\RequirePackage{xspace}
+\RequirePackage{makeidx}
+\RequirePackage{marginnote}
+\RequirePackage{pifont}
+\RequirePackage{pdfpages}
+\RequirePackage{xparse}
+\RequirePackage{xspace}
+\RequirePackage{tocloft}
+\RequirePackage[perpage]{footmisc}
+% 表格相关
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\newcommand{\ccell}[1]{\multicolumn{1}{c}{\sffamily\heiti #1}}
+\setlength\tabcolsep{1pt}
+\setlength{\LTpre}{\bigskipamount}
+\setlength{\LTpost}{\bigskipamount}
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\let\cqu@LT@array\LT@array
+\def\LT@array{\zihao{-5}\cqu@LT@array}
+% 表格相关结束
+\RequirePackage[
+	top=2.5cm, bottom=3cm,
+	inner=2cm, outer=4cm,
+	headsep=5mm, bindingoffset =5mm,
+	marginparwidth=2.7cm]{geometry}
+\RequirePackage[
+	square, comma,
+	numbers, super,
+	sort&compress]{natbib}
+	
+\setlist{nosep}
+\setlength{\cftbeforesecskip}{1mm}
+
+\ifxetex
+\hypersetup{%
+	CJKbookmarks=true}
+\else
+\hypersetup{%
+	unicode=true,
+	CJKbookmarks=false}
+\fi
+\hypersetup{%
+	linktoc=all,
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	breaklinks=true,
+	colorlinks=true,
+	allcolors=black,
+	urlcolor=magenta,
+	plainpages=false,
+	pdfborder=0 0 0}
+\urlstyle{same}
+\ifxetex
+\def\CJK@null{\kern\CJKnullspace\Unicode{48}{7}\kern\CJKnullspace}
+\defaultfontfeatures{Mapping=tex-text}
+\fi
+
+% 定制PDF属性
+\hypersetup{%
+	pdftitle = {\tstitle},
+	pdfauthor = {\tsauthor},
+	pdfsubject = {\tsabstract},
+	pdfkeywords = {\tskeywords},
+}
+
+\lstdefinestyle{lstStyleBase}{%
+basicstyle=\small\ttfamily,
+aboveskip=\medskipamount,
+belowskip=\medskipamount,
+lineskip=0pt,
+boxpos=c,
+showlines=false,
+extendedchars=true,
+upquote=true,
+tabsize=2,
+showtabs=false,
+showspaces=false,
+showstringspaces=false,
+numbers=none,
+linewidth=\linewidth,
+xleftmargin=4pt,
+xrightmargin=0pt,
+resetmargins=false,
+breaklines=true,
+breakatwhitespace=false,
+breakindent=0pt,
+breakautoindent=true,
+columns=flexible,
+keepspaces=true,
+gobble=2,
+framesep=3pt,
+rulesep=1pt,
+framerule=1pt,
+backgroundcolor=\color{gray!5},
+stringstyle=\color{green!40!black!100},
+keywordstyle=\bfseries\color{blue!50!black},
+commentstyle=\slshape\color{black!60}}
+
+\lstdefinestyle{lstStyleLaTeX}{%
+	style=lstStyleBase,
+	frame=l,
+	rulecolor=\color{cyan},
+	language=[LaTeX]TeX}
+
+% LaTeX代码环境
+\lstnewenvironment{latex}{\lstset{style=lstStyleLaTeX}}{}
+
+% 定义颜色集
+\colorlet{tsTitle}{blue!40!black}
+\colorlet{tsNote}{purple}
+
+% 说明性文字，紫色，楷体
+\newcommand{\note}[1]{{%
+	\color{tsNote}{\noindent\bfseries 说明：}\emph{#1}}}
+
+% 边注和索引
+\renewcommand*{\marginfont}{\color{tsNote}\sffamily\heiti}
+\DeclareDocumentCommand{\ppt}{s o m}{%
+	\IfBooleanTF {#1}
+	{%ture
+		\IfNoValueTF{#2}{\marginnote[#3]{#3}}{\marginnote[#2]{#3}}
+	}{%false
+		\IfNoValueTF{#2}{\marginnote[#3]{#3}}{\marginnote[#2]{#3}}
+		\index{#3}
+	}%
+}
+% 解决索引ind文件依赖问题
+\let\scan@allowedfalse\relax
+\let\pfill\dotfill
+
+% 定制章节标题
+\ctexset{%
+	section = {%
+		format = \zihao{2}\color{tsTitle}\sffamily\heiti\centering,
+		beforeskip = 36bp \@plus 1ex \@minus .2ex,
+		afterskip = 16bp \@plus .2ex,
+	},
+	subsection = {%
+		format = \zihao{3}\color{tsTitle}\sffamily\heiti\raggedright,
+		beforeskip = 24bp \@plus 1ex \@minus .2ex,
+		afterskip = 12bp \@plus .2ex,
+	},
+	subsubsection = {
+		aftertitle = {\ClassError{CQUTeX}%
+			{Level-3 and below sections are unsupported intentionally.}{}},
+	},
+	appendix = {%
+		numbering = false,
+		name = {},
+	},
+	paragraph = {
+		aftertitle = {\ClassError{CQUTeX}%
+			{Level-3 and below sections are unsupported intentionally.}{}},
+	},
+	subparagraph = {
+		aftertitle = {\ClassError{CQUTeX}%
+			{Level-3 and below sections are unsupported intentionally.}{}},
+	},
+	appendixname=附录,
+	contentsname={目\hskip\ccwd 录},
+	listfigurename={插图索引},
+	listtablename={表格索引},
+	figurename=图,
+	tablename=表,
+	bibname=参考文献,
+	indexname=关键词索引,
+}
+
+% 单双页打印问题
+\newcommand{\pagework}{%
+	\if@twoside
+		\thispagestyle{empty}
+		\clearpage{\pagestyle{empty}\cleardoublepage}
+		\pagenumbering{arabic}
+	\else
+		\thispagestyle{empty}
+		\clearpage
+		\pagenumbering{arabic}
+	\fi
+}
+
+% 带圈数字
+\def\@circlenum#1{%
+	\ifnum \value{#1} >10
+	\ClassError{CQUTeX}%
+	{Circled number of 11 or more is not supported.}{}
+	\fi
+	\ding{\the\numexpr\value{#1}+171\relax}%
+}
+% 脚注使用带圈数字，注意命令的执行时机
+\AtBeginDocument{%
+	\renewcommand{\thefootnote}{\@circlenum{footnote}}
+	\renewcommand{\thempfootnote}{\@circlenum{mpfootnote}}
+% 设置分割线、字号和悬挂缩进
+	\def\footnoterule{\vskip-3\p@\hrule\@width0.3\textwidth\@height0.4\p@\vskip2.6\p@}
+	\let\cqu@footnotesize\footnotesize
+	\renewcommand{\footnotesize}{\cqu@footnotesize\zihao{-5}}
+	\footnotemargin1.5em\relax
+%
+% 脚注部分将标注换为正文大小，这个过程是动态的：
+	\let\cqu@makefnmark\@makefnmark
+	\def\cqu@@makefnmark{\mbox{{\normalfont\@thefnmark}}}
+	\pretocmd{\@makefntext}{\let\@makefnmark\cqu@@makefnmark}{}{}
+	\apptocmd{\@makefntext}{\let\@makefnmark\cqu@makefnmark}{}{}
+}%AtBeginDocument
+
+% 解决\TeX \LaTeX 等命令后吞噬英文间空格
+\everylogo{\xspace}
+
+% 定制\autopageref{label}
+\AtBeginDocument{%
+	\def\figureautorefname{图}
+	\def\tableautorefname{表}
+	\def\partautorefname{卷}
+	\def\appendixautorefname{附录}
+	\def\equationautorefname{式}
+	\def\Itemautorefname{列表}
+	\def\chapterautorefname{章}
+	\def\sectionautorefname{节}
+	\def\subsectionautorefname{小节}
+	\def\subsubsectionautorefname{条目}
+	\def\paragraphautorefname{自然段}
+	\def\Hfootnoteautorefname{脚注}
+	\def\AMSautorefname{式}
+	\def\theoremautorefname{理论}
+	\def\pageautorefname{页}
+}%\AtBeginDocument
+
+% 把索引和参考文献加到目录里
+\pretocmd{\bibliography}{%
+	\phantomsection
+	\addcontentsline{toc}{section}{参考文献}
+	\addcontentsline{etoc}{section}{Reference}
+}{}{}
+\pretocmd{\printindex}{%
+	\phantomsection
+	\addcontentsline{toc}{section}{关键词索引}
+	\addcontentsline{etoc}{section}{Index}
+}{}{}
+
+% \CQUThesis 标识
+\newcommand{\cquthesis}{\textsc{CQUThesis}\xspace}
+
+% 改变引言字体
+\AtBeginEnvironment{quote}{\kaishu}
+\AtBeginEnvironment{quotation}{\kaishu}
+
+% 英文封面支持
+\def\etocname{\zihao{-3}\bfseries Contents}
+\newlistof[section]{econtents}{etoc}{\etocname}
+\newcommand\add@engcontents[2]{%
+	\addcontentsline{etoc}{#1}{\protect\numberline{\csname the#1\endcsname}#2}}
+\AtBeginDocument{%
+\let\cqu@section\section
+\let\cqu@subsection\subsection
+\DeclareDocumentCommand{\section}{s m o}{%
+	\IfBooleanTF{#1}{%true
+		\cqu@section*{#2}
+		\IfNoValueTF{#3}{\relax}{\addcontentsline{etoc}{section}{#3}}
+	}{%false
+		\cqu@section{#2}
+		\IfNoValueTF{#3}{\relax}{\add@engcontents{section}{#3}}
+	}
+}%section
+\DeclareDocumentCommand{\subsection}{s m o}{%
+	\IfBooleanTF{#1}{%true
+		\cqu@subsection*{#2}
+		\IfNoValueTF{#3}{\relax}{\addcontentsline{etoc}{subsection}{#3}}
+	}{%false
+	\cqu@subsection{#2}
+	\IfNoValueTF{#3}{\relax}{\add@engcontents{subsection}{#3}}
+	}
+}%subsection
+}

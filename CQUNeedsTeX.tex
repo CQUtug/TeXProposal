@@ -1,0 +1,77 @@
+% !TEX program = xelatex
+\documentclass[UTF8,zihao=-4,]{ctexart}
+\usepackage{cqutex-style}
+
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+\makeindex
+\begin{document}
+%********英文标题**********
+\begin{center}
+	{\zihao{-2}\bfseries\color{tsTitle}\etstitle}\\[8mm]
+	{\zihao{-4}\rmfamily
+	Zhennan Li\footnote{Innovation Center of Undergraduates, Chongqing University, Chongqing, China, 400000}\footnote{Contact: i@nanmu.me}\hskip1em
+	Chenyu Wu\footnotemark[1]\hskip1em
+	Chunlei Liu\footnotemark[1]\hskip1em
+	Pinyong Zhao\footnotemark[1]
+	}
+\end{center}
+\vspace{\stretch{1}}
+\def\abstractname{Abstract}
+\begin{abstract}
+	\mdseries\etsabstract
+\end{abstract}
+\vspace{\stretch{3}}
+\begin{multicols}{2}[
+	\setlength{\columnseprule}{.4pt}
+	\setlength{\columnsep}{18pt}]
+	\listofecontents
+\end{multicols}
+\vspace{\stretch{1}}
+\pagework % 单双面打印适配
+%*******中文标题**********
+\author{%
+	李振楠\footnote{重庆大学2012级材料学院本科毕业生，材料创新实践班结业成员，\href{https://github.com/nanmu42/CQUThesis}{\cquthesis} 作者。}\hskip\ccwd%
+	武晨宇\footnote{重庆大学2012级材料学院本科毕业生，人文与社会科学创新实践班结业成员，\href{http://jq.qq.com/?_wv=1027&k=2HvYu95}{重庆大学\TeX 用户组}秘书。}\hskip\ccwd%
+	刘春蕾\footnote{重庆大学2015级数统学院本科生，人文与社会科学创新实践班成员，\href{http://jq.qq.com/?_wv=1027&k=2HvYu95}{重庆大学\TeX 用户组}秘书。}\hskip\ccwd%
+	赵品勇\footnote{指导老师，重庆大学大学生创新实践中心负责人。}}%author
+\title{\sffamily\heiti\color{tsTitle}\tstitle}
+\maketitle
+\vspace{\stretch{1}}
+\def\abstractname{摘\hskip\ccwd 要}
+\begin{abstract}
+\tsabstract
+\end{abstract}
+\vspace{\stretch{3}}
+\begin{multicols}{2}[
+ \setlength{\columnseprule}{.4pt}
+ \setlength{\columnsep}{18pt}]
+ \tableofcontents
+\end{multicols}
+\vspace{\stretch{1}}
+\pagework % 单双面打印适配
+
+%=======正文部分=========
+%****第一章：引子*****
+\input{contents/introduction}
+%****第二章：我们需要TeX*****
+\input{contents/whatistex}
+\input{contents/journalDemands}
+\input{contents/finalYearDemands}
+\input{contents/OtherUsages}
+%****第三章：接受TeX毕业论文*****
+\input{contents/acceptFinalProj}
+%****第四章：开设TeX课程*****
+\input{contents/texCourses}
+%****第五章：建立CTAN镜像*****
+\input{contents/ctanMirror}
+%****第六章：结语*****
+\input{contents/conclusion}
+%=======附件部分========
+% 参考文献
+\bibliographystyle{cqunumerical}
+\bibliography{ref/bluescas,ref/nanmu}
+% 关键词索引
+\printindex
+\end{document}
