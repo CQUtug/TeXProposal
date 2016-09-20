@@ -35,8 +35,26 @@ The present proposal mainly explains the importance and necessity of introducing
 |  | 参考文献 | Reference | 22 |
 |  | 关键词索引 | Index | 23 |
 
+# 文档下载 / PDF Download
+
+* [点击下载 / Click to download the document typesetted](https://github.com/CQUtug/TeXProposal/releases/download/1.0/Proposal.for.Offering.TeX.Courses.and.Relevant.Resources.in.Chongqing.University.pdf)
+* [线上查看 / Web View](https://zenodo.org/record/154440)
+
 # 引用本文档 / Cite as
 LI Zhennan, WU Chenyu, LIU Chunlei, & ZHAO Pinyong. (2016, September 20). Proposal for Offering TeX Courses and Relevant Resources in Chongqing University. Zenodo. http://doi.org/10.5281/zenodo.154440
+
+# 致谢 / Acknowledgement
+
+作者在此鸣谢以下团体及项目：
+
+* 重庆大学大学生创新实践中心
+* [重庆大学毕业论文LaTeX模板](https://github.com/nanmu42/CQUThesis)
+
+The author would like to acknowledge these contributors / projects for their efforts and, essentially, beautiful mind:
+
+* Innovation Center of Undergraduates, Chongqing University
+* [LaTeX Thesis Template for Chongqing University](https://github.com/nanmu42/CQUThesis)
+
 
 # 内容许可 / License
 本项目中的排版结果（即项目输出的PDF文件）使用[Creative Commons Attribution 4.0 许可](https://creativecommons.org/licenses/by/4.0/)；余下用于指定格式和进行排版的源代码以及所有附带的附件（包含但不限于图形、PDF文件、嵌入代码）使用[MIT 许可](https://opensource.org/licenses/MIT)。以下是一份普通人可以理解的许可协议概要 (但不是替代) ：
