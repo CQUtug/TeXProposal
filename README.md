@@ -5,7 +5,7 @@
 
 本提案从介绍排版系统TeX的背景和特点开始，从研究生期刊论文投稿以及毕业生毕业论文排版工作这两个维度阐述了引入TeX 作为一种与Office Word 平行的写作系统的优势和必要性，最终提出一套基于重庆大学实际情况、有效可行的实施方案。
 
-Here are the original source code and necessary attachment of *Proposal for Offering TeX Courses and Relevant Resources in Chongqing University.
+Here are the original source code and necessary attachment of _Proposal for Offering TeX Courses and Relevant Resources in Chongqing University_.
 
 The present proposal mainly explains the importance and necessity of introducing TeX, a typeset system often used in academic writing, to students and teachers as the counterpart of Microsoft Word. This proposal starts from a brief introduction of TeX, then steps further into its fascinating application on academic writing and dissertation formatting. In the end, a set of possible implementation strategies with regard to the proper introduction of TeX and relevant resources to our university, is proposed.
 
