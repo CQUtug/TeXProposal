@@ -3,11 +3,29 @@
 
 这里是《关于推荐重庆大学开设TeX相关课程并推广其运用的提议》的原始文件，包含内容、排版及附件。
 
-本提案从介绍排版系统TeX的背景和特点开始，从研究生期刊论文投稿以及毕业生毕业论文排版工作这两个维度阐述了引入TeX 作为一种与Office Word 平行的写作系统的优势和必要性，最终提出一套基于重庆大学实际情况、有效可行的实施方案。
+如果您正在考虑向自己的学校或就职机构提出使用TeX（或LaTeX, XeLaTeX等）的提议，但是却不知道如何着手，那么这份文档也许可以帮到您：
+* 文档思路清晰，论证充分；
+* 文档内有大量的调查数据和图表；
+* 文档内提供了很多参考链接和文献；
+* 文档中具体讨论了提议原因、依赖条件和实施措施；
+* 最重要的是，文档由LaTeX语言写成，本身就是一个使用TeX的例子。
+
+本文档有着宽松的内容许可，在署名和致意的情况下，您可以自由地引用、节录、提取、演绎、分发本文档，详情请见[内容许可](https://github.com/CQUtug/TeXProposal#内容许可--license)。
+
+本文档从介绍排版系统TeX的背景和特点开始，从研究生期刊论文投稿以及毕业生毕业论文排版工作这两个维度阐述了引入TeX作为一种与Office Word平行的写作系统的优势和必要性，最终提出一套基于重庆大学实际情况、有效可行的实施方案。
 
 Here are the original source code and necessary attachment of _Proposal for Offering TeX Courses and Relevant Resources in Chongqing University_.
 
+This proposal could be helpful if one is considering suggest his/her university or company to use TeX(or, LaTeX, XeLaTeX) as typesetting system, especially for Chinese universities and companies.
+
 The present proposal mainly explains the importance and necessity of introducing TeX, a typeset system often used in academic writing, to students and teachers as the counterpart of Microsoft Word. This proposal starts from a brief introduction of TeX, then steps further into its fascinating application on academic writing and dissertation formatting. In the end, a set of possible implementation strategies with regard to the proper introduction of TeX and relevant resources to our university, is proposed.
+
+Features:
+* Proposal with clear thinking and full reasoning;
+* Lots of survey data and charts;
+* A number of links and reference documents;
+* Analysis with Reasoning, Dependencies and Detailed Measures;
+* Most importantly, the proposal is written in LaTeX, which is an example of TeX use.
 
 # 文档目录 / Table of Contents
 
