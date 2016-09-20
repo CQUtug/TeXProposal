@@ -55,7 +55,7 @@ Features:
 
 # 文档下载 / PDF Download
 
-* [点击下载 / Click to download the document typesetted](https://github.com/CQUtug/TeXProposal/releases/download/1.0/Proposal.for.Offering.TeX.Courses.and.Relevant.Resources.in.Chongqing.University.pdf)
+* [点击下载 / Click to download the document typesetted](https://github.com/CQUtug/TeXProposal/releases/download/1.1/Proposal-for-Offering-TeX-Courses-and-Relevant-Resources-in-Chongqing-University.pdf)
 * [线上查看 / Web View](https://zenodo.org/record/154440)
 
 # 引用本文档 / Cite as
