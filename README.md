@@ -60,7 +60,7 @@ Features:
 # 文档下载 / PDF Download
 以下为官方维护的下载链接：
 
-* [Github Release](https://github.com/CQUtug/TeXProposal/releases/download/1.1/Proposal-for-Offering-TeX-Courses-and-Relevant-Resources-in-Chongqing-University.pdf)
+* [Github](https://github.com/CQUtug/TeXProposal/raw/master/texproposal.pdf)
 * [Zenodo](https://zenodo.org/record/154440)
 * [CTAN](https://www.ctan.org/pkg/texproposal)
 
