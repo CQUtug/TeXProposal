@@ -35,5 +35,4 @@ DEV
 *.gz(busy)
 *.gz
 *.equ
-CQUNeedsTeX.pdf
-zhmakeindex.exe
+zhmakeindex.*
