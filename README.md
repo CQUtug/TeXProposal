@@ -1,5 +1,9 @@
 # 欢迎 / Welcome
-[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT) [![CC Attribution 4.0 International](https://img.shields.io/badge/license-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154440.svg)](https://doi.org/10.5281/zenodo.154440)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT) 
+[![CC Attribution 4.0 International](https://img.shields.io/badge/license-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154440.svg)](https://doi.org/10.5281/zenodo.154440) 
+[![CTAN release](https://img.shields.io/ctan/v/texproposal.svg?label=CTAN)](https://www.ctan.org/pkg/texproposal) 
+[![GitHub release](https://img.shields.io/github/release/CQUtug/TeXProposal.svg?label=Github)](https://github.com/CQUtug/TeXProposal)
 
 这里是《关于推荐重庆大学开设TeX相关课程并推广其运用的提议》的原始文件，包含内容、排版及附件。
 
@@ -54,9 +58,11 @@ Features:
 |  | 关键词索引 | Index | 23 |
 
 # 文档下载 / PDF Download
+以下为官方维护的下载链接：
 
-* [点击下载 / Click to download the document typesetted](https://github.com/CQUtug/TeXProposal/releases/download/1.1/Proposal-for-Offering-TeX-Courses-and-Relevant-Resources-in-Chongqing-University.pdf)
-* [线上查看 / Web View](https://zenodo.org/record/154440)
+* [Github Release](https://github.com/CQUtug/TeXProposal/releases/download/1.1/Proposal-for-Offering-TeX-Courses-and-Relevant-Resources-in-Chongqing-University.pdf)
+* [Zenodo](https://zenodo.org/record/154440)
+* [CTAN](https://www.ctan.org/pkg/texproposal)
 
 # 引用本文档 / Cite as
 LI Zhennan, WU Chenyu, LIU Chunlei, & ZHAO Pinyong. (2016, September 20). Proposal for Offering TeX Courses and Relevant Resources in Chongqing University. Zenodo. http://doi.org/10.5281/zenodo.154440
