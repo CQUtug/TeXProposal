@@ -4,6 +4,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154440.svg)](https://doi.org/10.5281/zenodo.154440) 
 [![CTAN release](https://img.shields.io/ctan/v/texproposal.svg?label=CTAN)](https://www.ctan.org/pkg/texproposal) 
 [![GitHub release](https://img.shields.io/github/release/CQUtug/TeXProposal.svg?label=Github)](https://github.com/CQUtug/TeXProposal)
+[![GitHub commits](https://img.shields.io/github/commits-since/CQUtug/TeXProposal/1.2.svg)](https://github.com/CQUtug/TeXProposal/commits/master)
 
 这里是《关于推荐重庆大学开设TeX相关课程并推广其运用的提议》的原始文件，包含内容、排版及附件。
 
@@ -58,10 +59,19 @@ Features:
 |  | 关键词索引 | Index | 23 |
 
 # 文档下载 / PDF Download
-以下为官方维护的下载链接：
+以下为官方维护的文档下载链接：
+
+PDF available at:
 
 * [Github](https://github.com/CQUtug/TeXProposal/raw/master/texproposal.pdf)
 * [Zenodo](https://zenodo.org/record/154440)
+* [CTAN](https://www.ctan.org/pkg/texproposal)
+
+如果您需要相关源代码，可点击下列链接下载：
+
+Source code available at:
+
+* [Github](https://github.com/CQUtug/TeXProposal/archive/master.zip)
 * [CTAN](https://www.ctan.org/pkg/texproposal)
 
 # 引用本文档 / Cite as
