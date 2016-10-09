@@ -30,14 +30,14 @@ Features:
 * Lots of survey data and charts;
 * A number of links and reference documents;
 * Analysis with Reasoning, Dependencies and Detailed Measures;
-* Most importantly, the proposal is written in LaTeX, which is an example of TeX use.
+* Most importantly, the proposal is written in LaTeX, which is an example of TeX use itself.
 
 # 文档目录 / Table of Contents
 
 | # | 中文 | English | 页码 / Page |
 |:---:|:-------------------------:|:----------------------------------------------------------:|:-----------:|
 | 1 | 引言 | Introduction | 1 |
-| 2 | 我们需要TeX | TeX in Need | 2 |
+| 2 | 我们需要TeX | Need for TeX | 2 |
 | 2.1 | 什么是TeX，以及它能做什么 | TeX, and the Talent Show | 2 |
 | 2.2 | 期刊投稿对TeX的需求 | TeX in Academic Writing | 9 |
 | 2.3 | 撰写毕业论文对TeX的需求 | Dissertation Typesetting with TeX | 9 |
@@ -91,11 +91,11 @@ The author would like to acknowledge these contributors / projects for their eff
 
 
 # 内容许可 / License
-本项目中的排版结果（即项目输出的PDF文件）使用[Creative Commons Attribution 4.0 许可](https://creativecommons.org/licenses/by/4.0/)；余下用于指定格式和进行排版的源代码以及所有附带的附件（包含但不限于图形、PDF文件、嵌入代码）使用[MIT 许可](https://opensource.org/licenses/MIT)。以下是一份普通人可以理解的许可协议概要 (但不是替代) ：
+本项目中的排版结果（即项目输出的PDF文件）使用[Creative Commons Attribution 4.0 许可](https://creativecommons.org/licenses/by/4.0/)；余下用于指定格式和进行排版的源代码使用[MIT 许可](https://opensource.org/licenses/MIT)。源代码中附带的附件（即包含的图形、PDF文件）使用[Creative Commons Attribution 4.0 许可](https://creativecommons.org/licenses/by/4.0/)。使用以下是一份普通人可以理解的许可协议概要 (但不是替代) ：
 
 这意味着您可以在任何媒介以任何形式复制、发行本作品，修改、转换或以本作品为基础进行创作，甚至用于商业目的，前提是：
-* 您尊重我们的署名权（转载时），向我们致谢（演绎时），或通过[DOI](https://doi.org/10.5281/zenodo.154440)引用这份文章（适用于文章）；
-* 您不能在转载时（无论是部分还是全部）使用技术手段影响这份内容许可的效力；
+* 您尊重我们的署名权，在行使权力时向我们致谢，并附上[文章链接](https://doi.org/10.5281/zenodo.154440)；
+* 您不能在行使权力时使用技术手段影响这份内容许可的效力；
 * 您同意，我们不应该也不会为您的所有行为负责。
 
 The content of this project itself(i.e. the PDF output of this project) is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and all the underlying source code used to format and display that content and all the attachment(graphs, PDFs, scripts, etc.) provided are licensed under the [MIT license](https://opensource.org/licenses/MIT).
