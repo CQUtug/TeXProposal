@@ -83,19 +83,21 @@ LI Zhennan, WU Chenyu, LIU Chunlei, & ZHAO Pinyong. (2016, September 20). Propos
 
 * 重庆大学大学生创新实践中心
 * [重庆大学毕业论文LaTeX模板](https://github.com/nanmu42/CQUThesis)
+* [重庆大学视觉标识素材包](https://github.com/CQUtug/CQULogo)
 
 The author would like to acknowledge these contributors / projects for their efforts and, essentially, beautiful mind:
 
 * Innovation Center of Undergraduates, Chongqing University
 * [LaTeX Thesis Template for Chongqing University](https://github.com/nanmu42/CQUThesis)
+* [Visual Identification Bundle of Chongqing University](https://github.com/CQUtug/CQULogo)
 
 
 # 内容许可 / License
 本项目中的排版结果（即项目输出的PDF文件）使用[Creative Commons Attribution 4.0 许可](https://creativecommons.org/licenses/by/4.0/)；余下用于指定格式和进行排版的源代码使用[MIT 许可](https://opensource.org/licenses/MIT)。源代码中附带的附件（即包含的图形、PDF文件）使用[Creative Commons Attribution 4.0 许可](https://creativecommons.org/licenses/by/4.0/)。使用以下是一份普通人可以理解的许可协议概要 (但不是替代) ：
 
 这意味着您可以在任何媒介以任何形式复制、发行本作品，修改、转换或以本作品为基础进行创作，甚至用于商业目的，前提是：
-* 您尊重我们的署名权，在行使权力时向我们致谢，并附上[文章链接](https://doi.org/10.5281/zenodo.154440)；
+* 您尊重我们的署名权，在行使权力时（包括但不限于对本作品部分或全部的转载、复制、引用、演绎）向我们致谢，并附上[文章链接](https://doi.org/10.5281/zenodo.154440)；
 * 您不能在行使权力时使用技术手段影响这份内容许可的效力；
-* 您同意，我们不应该也不会为您的所有行为负责。
+* 您同意，我们不应该也不会为您的任何行为负责。
 
-The content of this project itself(i.e. the PDF output of this project) is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and all the underlying source code used to format and display that content and all the attachment(graphs, PDFs, scripts, etc.) provided are licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The content of this project itself(i.e. the PDF output of this project) is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and all the underlying source code used to format and display that content are licensed under the [MIT license](https://opensource.org/licenses/MIT). All the attachment(graphs, PDFs, etc.) provided are licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
