@@ -4,7 +4,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.154440.svg)](https://doi.org/10.5281/zenodo.154440) 
 [![CTAN release](https://img.shields.io/ctan/v/texproposal.svg?label=CTAN)](https://www.ctan.org/pkg/texproposal) 
 [![GitHub release](https://img.shields.io/github/release/CQUtug/TeXProposal.svg?label=Github)](https://github.com/CQUtug/TeXProposal)
-[![GitHub commits](https://img.shields.io/github/commits-since/CQUtug/TeXProposal/1.2.svg)](https://github.com/CQUtug/TeXProposal/commits/master)
+[![GitHub commits](https://img.shields.io/github/commits-since/CQUtug/TeXProposal/1.4.svg)](https://github.com/CQUtug/TeXProposal/commits/master)
 
 这里是《关于推荐重庆大学开设TeX相关课程并推广其运用的提议》的原始文件，包含内容、排版及附件。
 
